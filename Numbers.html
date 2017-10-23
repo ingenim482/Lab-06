@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var input = prompt("Give me a number below 10000 you would like to outline");
+var thousands_sub = input%1000; 
+var thousands = (input - thousands_sub)/1000//1100 - 100
+
+var hundreds_sub = thousands_sub%100;
+var hundreds = (thousands_sub - hundreds_sub)/100
+
+var ones_sub = hundreds_sub%10;
+var tens = (hundreds_sub - ones_sub)/10;
+console.log( thousands + "Thousands");
+console.log( hundreds + "Hundreds")
+console.log( tens + "Tens");
+console.log( ones_sub + "Ones");
+</script>
+</body>
+</html?
